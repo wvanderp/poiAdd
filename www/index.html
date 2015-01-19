@@ -1,41 +1,41 @@
-<!DOCTYPE html>
 <html>
 	<head>
+		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/leaflet.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="css/lib/leaflet.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/header.css">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	</head>
 	<body>
-
-		<div data-role="page" id="pageone">
-			<div data-role="header">
-				<h1>Welcome To My Homepage</h1>
+		<div id="main">
+			<!-- begin menu -->
+			<div id="menu">
+				<ul class="mButton">
+					<li>contacts</li>
+				</ul>
 			</div>
+			<!-- end menu -->
 
-			<div data-role="main" class="ui-content">
-				<H1>hallo world</H1>
-				<a href="#pagetwo">ga naar de 2de pagina</a>
+
+			<div id="static">
+				<div id="header">
+					<div id="menu-button"></div>
+				</div>
+
+				<div id="content">
+					<div id="map"></div>
+				</div>
+				<div id="footer"></div>
+				<div id="overlay"></div>
 			</div>
-
-			<div data-role="footer">
-				<h1>Footer Text</h1>
-			</div>
-		</div> 
-
-		<div data-role="page" id="pagetwo">
-			<div data-role="header">
-				<h1>Welcome To My Homepage</h1>
-			</div>
-
-			<div data-role="main" class="ui-content">
-				<p>ons moeder</p>
-			<a href="#pageone">pagina 1</a>
 		</div>
-
-			<div data-role="footer">
-				<h1>Footer Text</h1>
-			</div>
-		</div> 
 	</body>
 </html>

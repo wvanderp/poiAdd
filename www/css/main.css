@@ -1,0 +1,17 @@
+/*all nul padding and magin for conviniance*/
+*{
+	padding: 0px;
+	margin: 0px
+}
+
+/*all of the schreen should be main*/
+#main{
+	height: 100%;
+	width:100%;
+}
+
+/*make up for the main map*/
+#map{
+	width: 100%;
+	height: 100%;
+}
