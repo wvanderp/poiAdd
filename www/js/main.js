@@ -1,3 +1,5 @@
+var map;
+
 
 $( document ).ready(function(){
 	// $("#main").addClass("menu-open");
@@ -15,8 +17,8 @@ $( document ).ready(function(){
 
 
 	// create a map in the "map" div, set the view to a given place and zoom
-	var map = L.map('map', {
-	    center: [51.505, -0.09],
+	map = L.map('map', {
+	    center: [51.8223, 4.2516],
 	    zoom: 13,
 	    zoomControl:false
 	});
