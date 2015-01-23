@@ -1,32 +1,4 @@
-var map;
-
-
 $( document ).ready(function(){
-	// $("#main").addClass("menu-open");
-	
-	$("#menu-button").click(function(){
-		$("#main").addClass("menu-open");
-	});
-	$("#overlay").click(function(){
-		$("#main").removeClass("menu-open");
-	});
-
-	$(".mButton li").click(function(){
-		$(".mButton li").siblings().addClass("submenu-open");
-	});
-
-
-	// create a map in the "map" div, set the view to a given place and zoom
-	map = L.map('map', {
-	    center: [51.8223, 4.2516],
-	    zoom: 13,
-	    zoomControl:false
-	});
-	// add an OpenStreetMap tile layer
-	L.tileLayer('http://b.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-	    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);
-
-	updateLoc();
-
+	uiEvents();
+	initMap();
 })

@@ -10,6 +10,15 @@
 	width:100%;
 }
 
+#content, #static{
+	/*height: 100%;*/
+	/*overflow: hidden;*/
+}
+
+#content{
+	height: calc(100%-40px);
+}
+
 /*make up for the main map*/
 #map{
 	width: 100%;

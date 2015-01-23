@@ -1,0 +1,36 @@
+#acceptWindow{
+	background-color: #0000ff;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 150px;
+	z-index: 1001;
+}
+
+#acceptWindow .hidden{
+	display: none;
+}
+
+
+#acceptWindow .acceptWindowBtn{
+	font-size: 32pt;
+	color: #ffffff;
+	text-align: center;
+}
+
+/*#acceptWindow .acceptWindowBtn:after{
+	margin-top: auto;
+	margin-bottom: auto;
+}*/
+
+#acceptWindow  #accept{
+	background-color: green;
+	float: left;
+	width: calc(80% - 20px);
+}
+
+#acceptWindow #denied{
+	background-color: red;
+	float: right;
+	width: calc(20% - 20px);
+}

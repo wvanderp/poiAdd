@@ -3,8 +3,12 @@
 		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/lib/leaflet.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/ui.js"></script>
 		<script type="text/javascript" src="js/geo.js"></script>
+		<script type="text/javascript" src="js/business.js"></script>
+
 
 		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap-theme.css">
@@ -12,6 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
+		<link rel="stylesheet" type="text/css" href="css/accept.css">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
@@ -20,7 +25,7 @@
 			<!-- begin menu -->
 			<div id="menu">
 				<ul class="mButton">
-					<li>contacts</li>
+					<li id="followBtn">dont follow</li>
 				</ul>
 			</div>
 			<!-- end menu -->
@@ -35,6 +40,10 @@
 					<div id="map"></div>
 				</div>
 				<div id="footer"></div>
+				<div id="acceptWindow" class="hidden">
+					<div id="accept" class="acceptWindowBtn"><p>accept</p></div>
+					<div id="denied" class="acceptWindowBtn"><p>denied</p></div>
+				</div>
 				<div id="overlay"></div>
 			</div>
 		</div>
