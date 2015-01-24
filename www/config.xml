@@ -1,0 +1,12 @@
+<widget id="cc.cwms.poiadd" version="0.0.1">
+    <name>poiadd</name>
+    <description>
+        a simple tool for adding poi's
+    </description>
+    <author email="wplas@gmail.com" href="http://cmws.cc">
+        wouter van der plas
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="Fullscreen" value="true" />
+</widget>
