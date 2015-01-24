@@ -17,7 +17,7 @@ function initMap () {
 	});
 	// add an OpenStreetMap tile layer
 	L.tileLayer('http://b.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-	    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	    attribution: '&copy; OpenStreetMap contributors'
 	}).addTo(map);
 
 	map.on('click', addPoint);
