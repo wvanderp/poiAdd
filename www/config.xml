@@ -6,7 +6,6 @@
     <author email="wplas@gmail.com" href="http://cmws.cc">
         wouter van der plas
     </author>
-    <content src="index.html" />
     <access origin="*" />
     <preference name="Fullscreen" value="true" />
 </widget>
