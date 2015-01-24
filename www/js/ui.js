@@ -19,4 +19,13 @@ function uiEvents () {
 		};
 		setFollow(!settings.follow);
 	});
+
+	//acept window
+	$("#acceptWindow #accept").click(function(){
+		alert("accepted");
+	});
+
+		$("#acceptWindow #denied").click(function(){
+		removePoint();
+	});
 }

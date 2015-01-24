@@ -1,5 +1,6 @@
 #acceptWindow{
 	background-color: #0000ff;
+	display: block;
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
@@ -13,11 +14,13 @@
 
 
 #acceptWindow .acceptWindowBtn{
-	font-size: 32pt;
+	font-size: 29pt;
+	margin: 10px;
+	height: 70px;
 	color: #ffffff;
 	text-align: center;
+	margin-top: calc(150px / 2 - 70px / 2);
 }
-
 /*#acceptWindow .acceptWindowBtn:after{
 	margin-top: auto;
 	margin-bottom: auto;
@@ -26,11 +29,11 @@
 #acceptWindow  #accept{
 	background-color: green;
 	float: left;
-	width: calc(80% - 20px);
+	width: calc(60% - 20px);
 }
 
 #acceptWindow #denied{
 	background-color: red;
 	float: right;
-	width: calc(20% - 20px);
+	width: calc(40% - 20px);
 }
