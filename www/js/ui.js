@@ -1,4 +1,4 @@
-//this file contains all the ui event lisensers
+//this file contains all the ui event listeners
 
 function uiEvents () {
 	// $("#main").addClass("menu-open");
@@ -18,24 +18,24 @@ function uiEvents () {
 		if (settings.follow) {
 			$("#followBtn").text("follow");
 		}else{
-			$("#followBtn").text("dont follow");
+			$("#followBtn").text("don't follow");
 		};
 		setFollow(!settings.follow);
 	});
 
-	//acept on the acept location menu
+	//accept on the accept location menu
 	$("#acceptWindow #accept").click(function(){
 		addTagSelectWindow();
 	});
 
-	//denied on the acept location menu
+	//denied on the accept location menu
 	$("#acceptWindow #denied").click(function(){
 		removePoint();
 	});
 }
 
 function addTagSelectFunc(){
-	//tag selection buttton
+	//tag selection button
 	// console.log("add func");
 	$(".tagSelectBtn").click(function(){
 		var lable = this.innerHTML;

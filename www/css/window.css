@@ -1,3 +1,4 @@
+/*a standard window class that has some values that every window needs*/
 .window{
 	width: 100%;
 	max-height: calc(100% - 40px);
@@ -7,6 +8,7 @@
 	position: absolute;
 }
 
+/*use if it needs to full the whole of the main area without the header.*/
 .windowFullScreen{
 	top: 40px;
 	left: 0px;
@@ -14,6 +16,7 @@
 	bottom: -40px;
 }
 
+/*makes shit invisible*/
 .hidden{
 	display: none;
 }

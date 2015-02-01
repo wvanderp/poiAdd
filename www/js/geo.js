@@ -1,3 +1,4 @@
+//this is all the code for the map and the location tracking.
 var userIcon = L.icon({
 	iconUrl: "/img/marker.png",
 	iconSize: [96/6,96/6]

@@ -1,4 +1,6 @@
-/*all nul padding and magin for conviniance*/
+/*css for the layout and styling of everything*/
+
+/*all null padding and margin for convenience*/
 *{
 	padding: 0px;
 	margin: 0px
@@ -8,7 +10,7 @@ html, body{
 	height: 100%;
 }
 
-/*all of the schreen should be main*/
+/*all of the screen should be main*/
 #main{
 	height: 100%;
 	width:100%;
