@@ -3,9 +3,15 @@
 	width: 200px;
 	min-width: 200px;
 	height: 100%;
+
+	display: inline;
+
 	float: left;
 	margin-left: -200px;
+
 	background-color: red;
+
+	z-index: 1010
 }
 
 /*the div that makes it all unclickable*/
@@ -15,7 +21,7 @@
 	background-color: rgba(0,0,0, 0.5);
 	float: right;
 	display: none;
-	z-index: 1002;
+	z-index: 1010;
 	position: absolute;
 	top: 0px;
 	right: 0px;

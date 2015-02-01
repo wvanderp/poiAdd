@@ -1,3 +1,4 @@
+//here you have te code for the placing of a point on the map
 var bizmark;
 
 function addPoint(e){

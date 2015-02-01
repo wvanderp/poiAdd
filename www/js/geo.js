@@ -12,7 +12,7 @@ function initMap () {
 	// create a map in the "map" div, set the view to a given place and zoom
 	map = L.map('map', {
 	    center: [0, 0],
-	    zoom: 13,
+	    zoom: 15,
 	    zoomControl:false
 	});
 	// add an OpenStreetMap tile layer

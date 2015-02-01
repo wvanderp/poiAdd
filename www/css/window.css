@@ -1,0 +1,19 @@
+.window{
+	width: 100%;
+	max-height: calc(100% - 40px);
+
+	z-index: 1001;
+
+	position: absolute;
+}
+
+.windowFullScreen{
+	top: 40px;
+	left: 0px;
+	right: 0px;
+	bottom: -40px;
+}
+
+.hidden{
+	display: none;
+}

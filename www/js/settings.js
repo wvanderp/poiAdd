@@ -3,6 +3,6 @@ var settings = {
 };
 
 function setFollow (_f) {
-	console.log(_f);
+	console.log("follow is set to"+_f);
 	settings.follow = _f;
 }

@@ -1,0 +1,35 @@
+#tagSelectWindow{
+	background-color: rgb(255, 160, 0);
+}
+
+#tagSelectWindowTop{
+	position: top;
+
+	width: 100%;
+
+	background-color: rgb(255,140,0);
+}
+
+#tagSelectWindowCancelBtn{
+
+}
+
+#tagSelectWindowCustomBtn{
+	
+}
+
+.tagSelectBtn{
+	margin: 10px;
+	padding: 4px;
+	min-width: 45%;
+
+	float: left;
+	margin-right: auto;
+	/*margin-left: auto;*/
+
+	color: white;
+	font-size: 250%;
+	text-align: center;
+
+	background-color: gray;
+}

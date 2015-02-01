@@ -1,3 +1,5 @@
+//this file contains all the ui event lisensers
+
 function uiEvents () {
 	// $("#main").addClass("menu-open");
 	
@@ -10,7 +12,8 @@ function uiEvents () {
 	$("#overlay").click(function(){
 		$("#main").removeClass("menu-open");
 	});
-	//in the menu
+
+	//the ui code for the follow button in the side menu
 	$("#followBtn").click(function(){
 		if (settings.follow) {
 			$("#followBtn").text("follow");
@@ -20,12 +23,23 @@ function uiEvents () {
 		setFollow(!settings.follow);
 	});
 
-	//acept window
+	//acept on the acept location menu
 	$("#acceptWindow #accept").click(function(){
-		alert("accepted");
+		addTagSelectWindow();
 	});
 
-		$("#acceptWindow #denied").click(function(){
+	//denied on the acept location menu
+	$("#acceptWindow #denied").click(function(){
 		removePoint();
+	});
+}
+
+function addTagSelectFunc(){
+	//tag selection buttton
+	// console.log("add func");
+	$(".tagSelectBtn").click(function(){
+		var lable = this.innerHTML;
+		$("#tagSelectWindowBtn").empty();
+		addValBtn(lable);
 	});
 }
