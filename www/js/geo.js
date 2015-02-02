@@ -23,36 +23,47 @@ function initMap () {
 
 	map.on('click', addPoint);
 
-	navigator.geolocation.watchPosition(succes, fail, {"enableHighAccuracy": true,  "maximumAge": 7500, "timeout": 1000000});
+	// navigator.geolocation.watchPosition(succes, fail, {"enableHighAccuracy": true,  "maximumAge": 7500, "timeout": 1000000});
 }
 
 function succes (pos) {
+	//get lat lon and acc from the position object
 	lat = pos.coords.latitude;
 	lon = pos.coords.longitude;
 	acc = pos.coords.accuracy;
 
+	//remove the marker and circle if they are present
 	if (typeof(circle) != "undefined") {
 		map.removeLayer(marker);
 		map.removeLayer(circle);
 	}
 
+	//add the marker on the position of the device
 	marker = L.marker([lat, lon]).addTo(map);
 
+	//add circle for accuracy
 	circle = L.circle([lat, lon], acc, {
-		color: 'bleu',
+		color: 'blue',
 		fillColor: '#03f',
 		fillOpacity: 0.3
 	}).addTo(map);
 
+	// if the setting for follow is set than move the map to the position of the device
 	if (settings.follow){
 		map.setView([lat, lon], map.getZoom());
 	}
 	
-
+	//add location to the track of this run.
+	if(settings.track){
+		addTrackPoint(lat, lon);
+	}
+	
+	//change the map size and log the position
 	map.invalidateSize();
 	console.log("current loc: lat:"+lat+" lon:"+lon);
 }
 
 function fail (err) {
-	alert('ERROR(' + err.code + '): ' + err.message);
+	//give an error if anything fails
+	console.log('ERROR(' + err.code + '): ' + err.message);
 }

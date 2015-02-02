@@ -15,11 +15,14 @@ function uiEvents () {
 
 	//the ui code for the follow button in the side menu
 	$("#followBtn").click(function(){
+		//changing the text on the button
+		//mabey needs to be moved
 		if (settings.follow) {
 			$("#followBtn").text("follow");
 		}else{
 			$("#followBtn").text("don't follow");
 		};
+		//setting the settings
 		setFollow(!settings.follow);
 	});
 
@@ -38,7 +41,7 @@ function addTagSelectFunc(){
 	//tag selection button
 	// console.log("add func");
 	$(".tagSelectBtn").click(function(){
-		var lable = this.innerHTML;
+		var lable = addUnderScore(this.innerHTML);
 		$("#tagSelectWindowBtn").empty();
 		addValBtn(lable);
 	});

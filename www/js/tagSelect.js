@@ -7,7 +7,7 @@ function addTagSelectWindow () {
 
 function addKeyBtn () {
 	for (var k in tags) {
-		$("#tagSelectWindowBtn").append('<div class="tagSelectBtn">'+k+'</div>');
+		$("#tagSelectWindowBtn").append('<div class="tagSelectBtn">'+removeUnderScore(k)+'</div>');
 	};
 	addTagSelectFunc();
 }
@@ -15,8 +15,17 @@ function addKeyBtn () {
 
 function addValBtn (k) {
 	for (var v in tags[k]) {
-		$("#tagSelectWindowBtn").append('<div class="tagSelectBtn">'+tags[k][v]+'</div>');
+		$("#tagSelectWindowBtn").append('<div class="tagSelectBtn">'+removeUnderScore(tags[k][v])+'</div>');
 	};
+}
+
+//some text trandsformers
+function addUnderScore(s){
+	return s.replace(/ /g, "_")
+}
+
+function removeUnderScore(s){
+	return s.replace(/_/g, " ")
 }
 
 var tags = {
@@ -25,45 +34,44 @@ var tags = {
 		"hotel",
 		"attraction",
 		"viewpoint",
-		"picnic site",
-		"camp site",
+		"picnic_site",
+		"camp_site",
 		"museum",
-		"guest house",
+		"guest_house",
 		"artwork",
 		"motel",
 		"chalet",
 		"hostel",
-		"caravan site",
-		"alpine hut",
+		"caravan_site",
+		"alpine_hut",
 		"zoo",
-		"theme park",
-		"wilderness hut",
+		"theme_park",
+		"wilderness_hut",
 		"apartment",
 		"gallery",
-		"hanami",
-		"bed and breakfast"
+		"bed_and_breakfast"
 	],
 	"amenity": [
 		"parking",
-		"place of worship",
+		"place_of_worship",
 		"school",
 		"restaurant",
 		"bench",
 		"fuel",
-		"post box",
+		"post_box",
 		"bank",
-		"fast food",
+		"fast_food",
 		"cafe",
-		"grave yard",
+		"grave_yard",
 		"recycling",
 		"kindergarten",
 		"pharmacy",
 		"hospital",
-		"post office",
-		"bicycle parking",
-		"public building",
+		"post_office",
+		"bicycle_parking",
+		"public_building",
 		"pub",
-		"waste basket",
+		"waste_basket",
 		"toilets",
 		"shelter"
 	],
@@ -87,33 +95,33 @@ var tags = {
 		"books",
 		"shoes",
 		"electronics",
-		"department store",
+		"department_store",
 		"hardware",
 		"jewelry"
 	],
 	"leisure": [
 		"pitch",
 		"park",
-		"swimming pool",
+		"swimming_pool",
 		"playground",
 		"garden",
-		"sports centre",
-		"nature reserve",
+		"sports_centre",
+		"nature_reserve",
 		"common",
 		"track",
 		"stadium",
-		"recreation ground",
-		"golf course",
+		"recreation_ground",
+		"golf_course",
 		"slipway",
 		"marina",
-		"picnic table",
-		"water park",
-		"miniature golf",
+		"picnic_table",
+		"water_park",
+		"miniature_golf",
 		"sauna",
-		"dog park",
+		"dog_park",
 		"fishing",
-		"horse riding",
-		"ice rink"
+		"horse_riding",
+		"ice_rink"
 	]
 };
 
