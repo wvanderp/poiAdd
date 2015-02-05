@@ -9,6 +9,7 @@
 		<script type="text/javascript" src="js/geo.js"></script>
 		<script type="text/javascript" src="js/track.js"></script>
 		<script type="text/javascript" src="js/points.js"></script>
+		<script type="text/javascript" src="js/infoCollect.js"></script>
 		<script type="text/javascript" src="js/tagSelect.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="css/lib/leaflet.css">
@@ -51,16 +52,17 @@
 							<div id="tagSelectWindowCancelBtn"></div>
 							<div id="tagSelectWindowCustomBtn"></div>
 						</div>
-						<div id="tagSelectWindowBtn">
-							
-						</div>
+						<div id="tagSelectWindowBtn"></div>
 					</div>
+
 					<div id="InfoCollectWindow" class="window windowFullScreen hidden">
-						<div class="choiceMenu">
+						<div class="choicebox">
 							<div id="accept" class="btn">accept</div>
 							<div id="denied" class="btn">denied</div>
 						</div>
-
+						<div id="locationBox">
+							<div class="btn">change location</div>
+						</div>
 					</div>
 				</div>
 				<div id="footer"></div>

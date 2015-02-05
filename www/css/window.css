@@ -5,6 +5,8 @@
 	z-index: 1001;
 
 	position: absolute;
+
+	overflow: hidden;
 }
 
 /*use if it needs to full the whole of the main area without the header.*/
@@ -18,17 +20,17 @@
 }
 
 /*a standard menu for accepting or declining*/
-.choiceMenu{
+.choicebox{
 
 }
 
-.choiceMenu .btn#accept{
+.choicebox .btn#accept{
 	background-color: green;
 	float: left;
 	width: calc(60% - 20px);
 }
 
-.choiceMenu .btn#denied{
+.choicebox .btn#denied{
 	background-color: red;
 	float: right;
 	width: calc(40% - 20px);

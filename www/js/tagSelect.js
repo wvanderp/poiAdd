@@ -1,7 +1,6 @@
 //this is all the code for selecting a tag for the point chosen
 
 function addTagSelectWindow () {
-	hideMap();
 	$("#tagSelectWindow").removeClass("hidden")
 	addKeyBtn();
 }

@@ -8,11 +8,13 @@ function addPoint(e){
 		map.removeLayer(bizmark);
 	}
 	bizmark = L.marker(e.latlng).addTo(map);
+	
+	current_point.lat = e.lat;
+	current_point.lon = e.lng;
 }
 
 function removePoint () {
 	if (typeof(bizmark) != "undefined") {
 		map.removeLayer(bizmark);
 	}
-	$("#acceptWindow").addClass("hidden");
 }

@@ -20,6 +20,11 @@
 }
 
 /*for devices lager then 640 px*/
+
+.menu-open #tagSelectWindow{
+	overflow: hidden;
+}
+
 @media (min-width: 640px) {
 	.tagSelectBtn{
 
@@ -27,7 +32,7 @@
 		padding: 4px;
 
 		width: 47%;
-		
+
 		float: left;
 
 		color: white;

@@ -6,7 +6,6 @@ $( document ).ready(function(){
 	initMap();
 
 	// debug
-	// addTagSelectWindow();
-	// $("#tagSelectWindowBtn").empty();
-	// addValBtn("amenity");
+	// hideMap();
+	// addInfoCollectWindow();
 })

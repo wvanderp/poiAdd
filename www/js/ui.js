@@ -30,7 +30,8 @@ function uiEvents () {
 
 	//accept on the accept location menu
 	$("#acceptWindow #accept").click(function(){
-		addTagSelectWindow();
+		hideMap();
+		addInfoCollectWindow();
 		$("#acceptWindow").addClass("hidden");
 	});
 
