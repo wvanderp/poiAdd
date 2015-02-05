@@ -23,7 +23,15 @@ function initMap () {
 
 	map.on('click', addPoint);
 
-	// navigator.geolocation.watchPosition(succes, fail, {"enableHighAccuracy": true,  "maximumAge": 7500, "timeout": 1000000});
+	navigator.geolocation.watchPosition(succes, fail, {"enableHighAccuracy": true,  "maximumAge": 7500, "timeout": 1000000});
+}
+
+function hideMap () {
+	$("#map").addClass("hidden");
+}
+
+function showMap () {
+	$("#map").addClass("hidden");
 }
 
 function succes (pos) {
@@ -43,7 +51,7 @@ function succes (pos) {
 
 	//add circle for accuracy
 	circle = L.circle([lat, lon], acc, {
-		color: 'blue',
+		// color: 'blue',
 		fillColor: '#03f',
 		fillOpacity: 0.3
 	}).addTo(map);

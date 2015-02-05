@@ -1,7 +1,6 @@
 /*a standard window class that has some values that every window needs*/
 .window{
 	width: 100%;
-	max-height: calc(100% - 40px);
 
 	z-index: 1001;
 
@@ -10,13 +9,27 @@
 
 /*use if it needs to full the whole of the main area without the header.*/
 .windowFullScreen{
-	top: 40px;
-	left: 0px;
-	right: 0px;
-	bottom: -40px;
+	min-height: calc(100% - 40px);
 }
 
 /*makes shit invisible*/
 .hidden{
 	display: none;
+}
+
+/*a standard menu for accepting or declining*/
+.choiceMenu{
+
+}
+
+.choiceMenu .btn#accept{
+	background-color: green;
+	float: left;
+	width: calc(60% - 20px);
+}
+
+.choiceMenu .btn#denied{
+	background-color: red;
+	float: right;
+	width: calc(40% - 20px);
 }

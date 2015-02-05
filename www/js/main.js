@@ -4,4 +4,9 @@ $( document ).ready(function(){
 	uiEvents();
 	//loads the map
 	initMap();
+
+	// debug
+	// addTagSelectWindow();
+	// $("#tagSelectWindowBtn").empty();
+	// addValBtn("amenity");
 })

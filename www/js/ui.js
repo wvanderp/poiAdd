@@ -6,11 +6,13 @@ function uiEvents () {
 	//menu opener in the header
 	$("#menu-button").click(function(){
 		$("#main").addClass("menu-open");
+		$("#menu-button").addClass("hidden");
 	});
 
 	//the overlay for closing the menu
 	$("#overlay").click(function(){
 		$("#main").removeClass("menu-open");
+		$("#menu-button").removeClass("hidden");
 	});
 
 	//the ui code for the follow button in the side menu
@@ -29,11 +31,13 @@ function uiEvents () {
 	//accept on the accept location menu
 	$("#acceptWindow #accept").click(function(){
 		addTagSelectWindow();
+		$("#acceptWindow").addClass("hidden");
 	});
 
 	//denied on the accept location menu
 	$("#acceptWindow #denied").click(function(){
 		removePoint();
+		$("#acceptWindow").addClass("hidden");
 	});
 }
 

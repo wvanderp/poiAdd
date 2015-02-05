@@ -35,6 +35,8 @@
 
 .menu-open #static{
 	margin-left: 200px;
+	overflow: hidden;
+	background-color: yellow;
 }
 
 .menu-open #overlay{

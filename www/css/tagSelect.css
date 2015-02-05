@@ -19,18 +19,36 @@
 	
 }
 
-.tagSelectBtn{
-	margin: 10px;
-	padding: 4px;
-	min-width: 45%;
+/*for devices lager then 640 px*/
+@media (min-width: 640px) {
+	.tagSelectBtn{
 
-	float: left;
-	margin-right: auto;
-	/*margin-left: auto;*/
+		margin: 5px;
+		padding: 4px;
 
-	color: white;
-	font-size: 250%;
-	text-align: center;
+		width: 47%;
+		
+		float: left;
 
-	background-color: gray;
+		color: white;
+		font-size: 250%;
+		text-align: center;
+
+		background-color: gray;
+	}
+}
+
+/*for devices smaller then 640 px*/
+@media (max-width: 640px) {
+	.tagSelectBtn{
+
+		margin: 5px;
+		padding: 4px;
+
+		color: white;
+		font-size: 250%;
+		text-align: center;
+
+		background-color: gray;
+	}
 }

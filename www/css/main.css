@@ -10,7 +10,7 @@ html, body{
 	height: 100%;
 }
 
-/*all of the screen should be main*/
+/*all of the screen should be in the main div*/
 #main{
 	height: 100%;
 	width:100%;

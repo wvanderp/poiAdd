@@ -1,0 +1,9 @@
+.btn{
+	font-size: 240%;
+	margin: 10px;
+	height: 70px;
+	color: #ffffff;
+	text-align: center;
+	margin-top: calc(100px / 2 - 70px / 2);
+	margin-bottom: auto;
+}

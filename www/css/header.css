@@ -1,17 +1,28 @@
 /*css for the top menu bar or header*/
 #header{
+	/*position: absolute;*/
+	top: 0px;
+
 	width: 100%;
 	height: 40px;
 	background-color: green;
 }
 
 #menu-button{
-	background-image: url("../img/menu.png");
+	/*background-image: url("../img/menu.png");*/
 	background-color: gray;
 	background-size: 80%;
 	background-repeat: no-repeat;
 	background-position: center;
+
 	color: black;
+
+	position: absolute;
+	top:5px;
+	left: 5px;
+
+	z-index: 1000;
+
 	height: 30px;
 	width: 30px;
 }

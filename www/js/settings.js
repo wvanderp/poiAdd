@@ -5,12 +5,18 @@ var settings = {
 	"track": true
 };
 
-function setFollow (_f) {
-	console.log("follow is set to"+_f);
-	settings.follow = _f;
+function storeSettings() {
+	//store setting 
 }
 
-function setTrack (_f) {
-	console.log("track is set to"+_f);
-	settings.track = _f;
+function setFollow (_f) {
+	console.log("follow is set to "+_f);
+	settings.follow = _f;
+	storeSettings();
+}
+
+function setTrack (_t) {
+	console.log("track is set to "+_t);
+	settings.track = _t;
+	storeSettings();
 }
