@@ -1,0 +1,14 @@
+.box{
+	background-color: rgb(150,150,150);
+	margin: 5px;
+}
+
+.box .boxHeaderTitle{
+	background-color: rgb(100,100,100);
+	float: left;
+}
+
+.box .boxHeaderBtn{
+	background-color: rgb(100,100,100);
+	float: right;
+}

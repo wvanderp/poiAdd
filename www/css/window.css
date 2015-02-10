@@ -4,9 +4,9 @@
 
 	z-index: 1001;
 
-	position: absolute;
+	/*position: absolute;*/
 
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 /*use if it needs to full the whole of the main area without the header.*/
@@ -19,19 +19,3 @@
 	display: none;
 }
 
-/*a standard menu for accepting or declining*/
-.choicebox{
-
-}
-
-.choicebox .btn#accept{
-	background-color: green;
-	float: left;
-	width: calc(60% - 20px);
-}
-
-.choicebox .btn#denied{
-	background-color: red;
-	float: right;
-	width: calc(40% - 20px);
-}

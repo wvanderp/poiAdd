@@ -3,7 +3,8 @@
 /*all null padding and margin for convenience*/
 *{
 	padding: 0px;
-	margin: 0px
+	margin: 0px;
+	color: #ffffff;
 }
 
 html, body{

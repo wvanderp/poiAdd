@@ -2,7 +2,7 @@
 var bizmark;
 
 function addPoint(e){
-	console.log("adding pointer")
+	console.log("adding pointer at: "+e.latlng)
 	$("#acceptWindow").removeClass("hidden");
 	if (typeof(bizmark) != "undefined") {
 		map.removeLayer(bizmark);

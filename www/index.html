@@ -18,6 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/window.css">
+		<link rel="stylesheet" type="text/css" href="css/box.css">
 		<link rel="stylesheet" type="text/css" href="css/accept.css">
 		<link rel="stylesheet" type="text/css" href="css/tagSelect.css">
 		<link rel="stylesheet" type="text/css" href="css/infoCollect.css">
@@ -56,12 +57,15 @@
 					</div>
 
 					<div id="InfoCollectWindow" class="window windowFullScreen hidden">
-						<div class="choicebox">
+						<div id="choicebox" class="box">
 							<div id="accept" class="btn">accept</div>
 							<div id="denied" class="btn">denied</div>
 						</div>
-						<div id="locationBox">
-							<div class="btn">change location</div>
+						<div id="locationBox" class="box">
+							<div id="locationBoxHeader" class="boxHeader">
+								<div class="BoxHeaderTitle">location</div>
+								<div class="boxHeaderBtn">change</div>
+							</div>
 						</div>
 					</div>
 				</div>
