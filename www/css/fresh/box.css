@@ -1,0 +1,15 @@
+.box{
+	width: 100%;
+	max-width: 100%;
+	background-color: yellow;
+}
+
+.box .boxHeaderTitle{
+	background-color: rgb(100,100,100);
+	float: left;
+}
+
+.box .boxHeaderBtn{
+	background-color: rgb(100,100,100);
+	float: right;
+}

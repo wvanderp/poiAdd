@@ -1,0 +1,27 @@
+/*css for the layout and styling of everything*/
+
+/*all null padding and margin for convenience*/
+*{
+	padding: 0px;
+	margin: 0px;
+	color: #ffffff;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*all of the screen should be in the main div*/
+#main{
+	height: 100%;
+	width:100%;
+	max-width: 100%;
+	/*overflow: hidden;*/
+}
+
+/*make up for the main map*/
+#map{
+	/*width: 100%;*/
+	height: calc(100% - 40px);
+}
+

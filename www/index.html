@@ -14,14 +14,11 @@
 
 		<link rel="stylesheet" type="text/css" href="css/lib/leaflet.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/components.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
-		<link rel="stylesheet" type="text/css" href="css/header.css">
-		<link rel="stylesheet" type="text/css" href="css/window.css">
+		<link rel="stylesheet" type="text/css" href="css/acceptWindow.css">
+		<link rel="stylesheet" type="text/css" href="css/button.css">
 		<link rel="stylesheet" type="text/css" href="css/box.css">
-		<link rel="stylesheet" type="text/css" href="css/accept.css">
-		<link rel="stylesheet" type="text/css" href="css/tagSelect.css">
-		<link rel="stylesheet" type="text/css" href="css/infoCollect.css">
+
 
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -36,31 +33,34 @@
 			</div>
 			<!-- end menu -->
 
+			<header>
+				<div id="MenuOpenBtn"></div>
+				<div id="headerTitle"></div>
+			</header>
 
 			<div id="static">
-				<div id="header">
-					<div id="menu-button"></div>
-				</div>
 
 				<div id="content">
 					<div id="map"></div>
-					<div id="acceptWindow" class="window hidden">
-						<div id="accept" class="acceptWindowBtn">accept</div>
-						<div id="denied" class="acceptWindowBtn">denied</div>
+					<div id="acceptWindow" class="hidden">
+						<div class="btn btnAccept">accept</div>
+						<div class="btn btnDenied">denied</div>
 					</div>
-					<div id="tagSelectWindow" class="window windowFullScreen hidden">
+
+<!-- 					<div id="tagSelectWindow" class="window windowFullScreen hidden">
 						<div id="tagSelectWindowTop">
 							<div id="tagSelectWindowCancelBtn"></div>
 							<div id="tagSelectWindowCustomBtn"></div>
 						</div>
 						<div id="tagSelectWindowBtn"></div>
-					</div>
+					</div> -->
 
 					<div id="InfoCollectWindow" class="window windowFullScreen hidden">
 						<div id="choicebox" class="box">
-							<div id="accept" class="btn">accept</div>
-							<div id="denied" class="btn">denied</div>
+							<div class="btn btnAccept">accept</div>
+							<div class="btn btnDenied">denied</div>
 						</div>
+
 						<div id="locationBox" class="box">
 							<div id="locationBoxHeader" class="boxHeader">
 								<div class="BoxHeaderTitle">location</div>

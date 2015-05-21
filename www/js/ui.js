@@ -4,15 +4,13 @@ function uiEvents () {
 	// $("#main").addClass("menu-open");
 	
 	//menu opener in the header
-	$("#menu-button").click(function(){
+	$("#MenuOpenBtn").click(function(){
 		$("#main").addClass("menu-open");
-		$("#menu-button").addClass("hidden");
 	});
 
 	//the overlay for closing the menu
 	$("#overlay").click(function(){
 		$("#main").removeClass("menu-open");
-		$("#menu-button").removeClass("hidden");
 	});
 
 	//the ui code for the follow button in the side menu

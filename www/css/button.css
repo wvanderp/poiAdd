@@ -1,0 +1,25 @@
+.btn{
+	background: gray;
+	
+	width: calc(50% - 10px);
+
+	float: left;
+
+	margin: 5px;
+
+	text-align: center;
+	color: white;
+	font-size: 200%;
+}
+
+.btn:after{
+	clear: both;
+}
+
+.btnAccept{
+	background-color: green;
+}
+
+.btnDenied{
+	background-color: red;
+}

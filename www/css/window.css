@@ -1,21 +1,3 @@
-/*a standard window class that has some values that every window needs*/
 .window{
-	width: 100%;
-
-	z-index: 1001;
-
-	/*position: absolute;*/
-
-	/*overflow: hidden;*/
+	position: absolute;
 }
-
-/*use if it needs to full the whole of the main area without the header.*/
-.windowFullScreen{
-	min-height: calc(100% - 40px);
-}
-
-/*makes shit invisible*/
-.hidden{
-	display: none;
-}
-
